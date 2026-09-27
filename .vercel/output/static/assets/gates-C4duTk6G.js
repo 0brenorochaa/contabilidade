@@ -1,0 +1,1 @@
+import{t as e}from"./react-DB-4Zxce.js";import{t}from"./jsx-runtime-BtH0gOTJ.js";import{T as n}from"./index-aWvB_W2w.js";e();var r=t(),i=`/login`;function a({to:e=i}){return(0,r.jsx)(n,{to:e})}export{a as t};

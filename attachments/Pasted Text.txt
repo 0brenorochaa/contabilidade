@@ -1,0 +1,1267 @@
+Crie um sistema web completo chamado FinTrack, um aplicativo profissional de controle financeiro pessoal.
+
+O sistema deve ser uma aplicação real e funcional, não apenas um protótipo visual. Login, cadastro, banco de dados, transações, gráficos, metas, orçamento, painel administrativo e todas as ações devem funcionar de verdade e persistir os dados.
+
+1. IDENTIDADE DO PROJETO
+
+Nome: FinTrack
+
+Slogan:
+
+“Seu dinheiro. Seu controle. Seu futuro.”
+
+Objetivo principal:
+
+Criar uma plataforma moderna para que o usuário consiga controlar sua vida financeira de forma simples, visual e organizada, acompanhando:
+
+* Quanto possui disponível
+* Quanto recebeu
+* Quanto gastou
+* Onde gastou
+* Quanto conseguiu economizar
+* Metas financeiras
+* Orçamento mensal
+* Evolução financeira
+* Histórico completo das movimentações
+
+A aplicação deve ser preparada para funcionar em celular, tablet e computador.
+
+⸻
+
+2. DESIGN E IDENTIDADE VISUAL
+
+Criar uma interface:
+
+* Moderna
+* Profissional
+* Limpa
+* Minimalista
+* Intuitiva
+* Responsiva
+* Mobile-first
+
+Cores
+
+Utilizar principalmente:
+
+* Verde como cor principal
+* Azul e tons de verde como cores secundárias
+* Fundo claro no modo claro
+* Fundo escuro no modo escuro
+* Vermelho somente para:
+    * despesas
+    * valores negativos
+    * erros
+    * alertas importantes
+
+Não exagerar nas cores.
+
+Utilizar:
+
+* Cards arredondados
+* Sombras suaves
+* Ícones modernos
+* Espaçamento consistente
+* Tipografia moderna
+* Animações suaves
+
+As animações devem ser discretas e profissionais.
+
+Respeitar prefers-reduced-motion.
+
+⸻
+
+3. RESPONSIVIDADE
+
+O sistema deve funcionar perfeitamente em:
+
+* iPhone
+* Android
+* Tablets
+* Notebooks
+* Computadores desktop
+
+Priorizar a experiência mobile.
+
+No celular, utilizar navegação inferior com:
+
+* Início
+* Adicionar
+* Histórico
+* Metas
+* Perfil
+
+No desktop, utilizar menu lateral ou superior profissional.
+
+Todos os elementos devem se adaptar corretamente ao tamanho da tela.
+
+⸻
+
+4. LANDING PAGE
+
+Criar uma página inicial pública apresentando o FinTrack.
+
+Hero:
+
+Seu dinheiro. Seu controle. Seu futuro.
+
+Texto:
+
+“Tenha uma visão clara das suas finanças, controle seus gastos, acompanhe suas metas e organize seu futuro financeiro.”
+
+Botões:
+
+Começar agora
+
+Entrar
+
+Criar seções apresentando:
+
+* Controle de despesas
+* Controle de receitas
+* Metas financeiras
+* Gráficos
+* Orçamento
+* Histórico
+* Segurança
+* Organização financeira
+
+Adicionar uma seção explicando que os dados financeiros pertencem ao usuário e são protegidos.
+
+Criar footer profissional.
+
+⸻
+
+5. CADASTRO
+
+Criar sistema de cadastro com:
+
+* Nome
+* E-mail
+* Senha
+* Telefone
+
+Validar todos os campos.
+
+O e-mail deve possuir formato válido.
+
+A senha deve possuir requisitos mínimos de segurança.
+
+Nunca armazenar senha em texto puro.
+
+Utilizar hash seguro de senha.
+
+Impedir cadastro duplicado usando o mesmo e-mail.
+
+⸻
+
+6. LOGIN
+
+Criar login funcional.
+
+Campos:
+
+* E-mail ou usuário
+* Senha
+
+Funcionalidades:
+
+* Entrar
+* Sair
+* Recuperar senha
+* Alterar senha
+* Manter sessão
+* Encerrar sessão
+* Validar credenciais
+
+Criar mensagens de erro claras.
+
+Nunca revelar informações desnecessárias sobre contas existentes.
+
+⸻
+
+7. PRIMEIRO ACESSO
+
+Após o primeiro cadastro, apresentar uma configuração inicial.
+
+Perguntar:
+
+Qual sua renda mensal?
+
+Permitir que o usuário informe seu valor.
+
+Qual é seu principal objetivo financeiro?
+
+Opções:
+
+* Economizar dinheiro
+* Controlar meus gastos
+* Comprar alguma coisa
+* Criar uma reserva de emergência
+* Investir
+* Organizar minha vida financeira
+* Outro
+
+Essas informações devem ser salvas no perfil.
+
+⸻
+
+8. DASHBOARD PRINCIPAL
+
+Criar um dashboard completo.
+
+Exibir:
+
+Saldo disponível
+
+Mostrar:
+
+R$ 0,00
+
+quando o usuário ainda não tiver movimentações.
+
+O saldo deve ser calculado automaticamente:
+
+Receitas - Despesas
+
+Cards
+
+Criar cards para:
+
+* Saldo
+* Receitas
+* Despesas
+* Economia
+
+Todos devem ser atualizados automaticamente.
+
+⸻
+
+9. FILTRO DE PERÍODO
+
+Adicionar seletor de período.
+
+Opções:
+
+* Este mês
+* Mês anterior
+* Últimos 7 dias
+* Últimos 30 dias
+* Últimos 3 meses
+* Período personalizado
+
+Quando o período mudar, atualizar:
+
+* Saldo
+* Receitas
+* Despesas
+* Gráficos
+* Histórico
+* Estatísticas
+
+⸻
+
+10. TRANSAÇÕES
+
+Esta é uma das funcionalidades principais.
+
+Permitir registrar movimentações financeiras.
+
+Nova despesa
+
+Campos:
+
+* Valor
+* Descrição
+* Data
+* Loja/local
+* Categoria opcional
+* Conta utilizada opcional
+
+Exemplo:
+
+Valor: R$ 25,00
+Descrição: Hambúrguer
+Data: 26/09/2026
+Local: Restaurante
+
+Nova receita
+
+Campos:
+
+* Valor
+* Descrição
+* Data
+* Origem
+* Conta de destino opcional
+
+Origens:
+
+* Salário
+* Jovem Aprendiz
+* Freelancer
+* Mesada
+* Transferência
+* Outros
+
+⸻
+
+11. CATEGORIAS
+
+As categorias não devem ser obrigatórias.
+
+Categorias padrão:
+
+* Alimentação
+* Transporte
+* Casa
+* Saúde
+* Educação
+* Lazer
+* Compras
+* Assinaturas
+* Outros
+
+Permitir que o usuário crie categorias personalizadas.
+
+⸻
+
+12. HISTÓRICO
+
+Criar uma página completa de histórico.
+
+Cada movimentação deve mostrar:
+
+* Ícone
+* Descrição
+* Loja/origem
+* Data
+* Categoria
+* Valor
+
+Receitas devem ser visualmente diferentes das despesas.
+
+Permitir:
+
+* Editar
+* Excluir
+* Pesquisar
+* Filtrar
+
+Antes de excluir uma transação, mostrar confirmação.
+
+⸻
+
+13. PESQUISA E FILTROS
+
+Criar pesquisa por:
+
+* Descrição
+* Loja
+* Origem
+* Valor
+
+Filtros:
+
+* Receita
+* Despesa
+* Período
+* Categoria
+* Loja
+* Maior valor
+* Menor valor
+
+Os filtros devem funcionar combinados.
+
+⸻
+
+14. GRÁFICOS
+
+Criar gráficos reais baseados nos dados do usuário.
+
+Gráfico de receitas x despesas
+
+Comparar receitas e despesas por período.
+
+Evolução do saldo
+
+Mostrar como o saldo evoluiu.
+
+Gastos por categoria
+
+Mostrar distribuição dos gastos.
+
+Receitas por período
+
+Mostrar evolução das receitas.
+
+Os gráficos devem atualizar automaticamente quando os dados forem alterados.
+
+⸻
+
+15. METAS FINANCEIRAS
+
+Criar sistema de metas.
+
+O usuário poderá:
+
+* Criar meta
+* Editar meta
+* Excluir meta
+* Adicionar dinheiro à meta
+* Acompanhar progresso
+
+Cada meta deve possuir:
+
+* Nome
+* Valor desejado
+* Valor atual
+* Data limite opcional
+* Descrição opcional
+
+Mostrar:
+
+R$ 2.500 / R$ 5.000
+
+e uma barra de progresso.
+
+Se houver data limite, calcular uma sugestão de quanto o usuário precisaria guardar por mês para atingir a meta.
+
+Essa sugestão deve ser apenas matemática e não deve ser apresentada como recomendação de investimento.
+
+⸻
+
+16. ORÇAMENTO
+
+Permitir configurar um limite mensal de gastos.
+
+Exemplo:
+
+Orçamento:
+
+R$ 1.000,00
+
+Gasto:
+
+R$ 750,00
+
+Restante:
+
+R$ 250,00
+
+Mostrar barra de progresso.
+
+Criar alertas quando:
+
+* atingir 80%
+* atingir 100%
+* ultrapassar o limite
+
+O usuário poderá ativar ou desativar esse recurso.
+
+⸻
+
+17. INSIGHTS FINANCEIROS
+
+Criar uma área de insights baseada exclusivamente nos dados reais do usuário.
+
+Exemplos:
+
+* “Você gastou menos neste mês do que no mês anterior.”
+* “Sua maior despesa foi Alimentação.”
+* “Você recebeu R$ X neste período.”
+* “Você economizou R$ X.”
+* “Sua meta está X% concluída.”
+
+Não fornecer recomendações financeiras arriscadas.
+
+Os insights devem ser informativos e baseados nos dados existentes.
+
+⸻
+
+18. CONTAS
+
+Permitir cadastrar contas financeiras.
+
+Tipos:
+
+* Banco
+* Dinheiro
+* Carteira digital
+* Poupança
+* Outra
+
+Campos:
+
+* Nome
+* Tipo
+* Saldo inicial
+
+O usuário pode utilizar essas contas nas movimentações.
+
+Essa funcionalidade deve ser opcional.
+
+⸻
+
+19. NOTIFICAÇÕES
+
+Criar sistema de notificações.
+
+Possíveis notificações:
+
+* Orçamento atingindo limite
+* Meta próxima do prazo
+* Meta concluída
+* Registro importante
+
+Permitir ativar/desativar notificações.
+
+Não criar notificações desnecessárias.
+
+⸻
+
+20. PERFIL
+
+Criar página de perfil contendo:
+
+* Nome
+* E-mail
+* Telefone
+* Renda mensal
+* Objetivo financeiro
+
+Permitir editar os dados.
+
+⸻
+
+21. CONFIGURAÇÕES
+
+Criar configurações para:
+
+Aparência
+
+* Claro
+* Escuro
+* Automático
+
+Moeda
+
+Padrão:
+
+BRL — R$
+
+Data
+
+Padrão:
+
+DD/MM/AAAA
+
+Notificações
+
+Ativar/desativar.
+
+Segurança
+
+Permitir:
+
+* Alterar senha
+* Encerrar todas as sessões
+
+Privacidade
+
+Permitir:
+
+* Exportar dados
+* Excluir conta
+
+⸻
+
+22. EXPORTAÇÃO
+
+Permitir ao usuário exportar seus próprios dados.
+
+Formatos:
+
+* CSV
+* PDF
+
+Exportar:
+
+* Receitas
+* Despesas
+* Histórico
+* Metas
+* Informações necessárias do perfil
+
+Nunca permitir que um usuário exporte os dados de outro usuário.
+
+⸻
+
+23. PRIVACIDADE
+
+Cada usuário deve possuir isolamento completo dos próprios dados.
+
+Um usuário nunca pode visualizar:
+
+* Transações de outro usuário
+* Metas de outro usuário
+* Contas de outro usuário
+* Informações privadas de outro usuário
+
+Implementar autorização no backend.
+
+Não confiar somente na proteção do frontend.
+
+⸻
+
+24. BANCO DE DADOS
+
+Estruturar o banco de dados de forma organizada.
+
+Criar entidades/tabelas para:
+
+* users
+* profiles
+* transactions
+* categories
+* accounts
+* budgets
+* goals
+* goal_contributions
+* notifications
+* settings
+* audit_logs
+
+Relacionar corretamente os registros ao usuário.
+
+Usar IDs únicos.
+
+Criar timestamps:
+
+* created_at
+* updated_at
+
+Quando necessário.
+
+⸻
+
+25. PAINEL ADMINISTRATIVO
+
+Criar uma área administrativa separada.
+
+O administrador deve possuir uma conta com função/role:
+
+admin
+
+Usuários normais devem possuir:
+
+user
+
+O painel administrativo deve possuir proteção própria.
+
+Não permitir acesso ao painel apenas escondendo elementos no frontend.
+
+As rotas administrativas devem ser protegidas no backend.
+
+⸻
+
+26. USUÁRIO PRINCIPAL DO ADMINISTRADOR
+
+Criar inicialmente um administrador principal.
+
+Usuário:
+
+admin
+
+E-mail:
+
+admin@fintrack.local
+
+Senha inicial:
+
+FinTrack@Admin2026!
+
+Essas credenciais devem ser utilizadas apenas como bootstrap inicial.
+
+A senha inicial deve ser armazenada com hash seguro.
+
+Nunca deixar a senha exposta no código do frontend.
+
+Utilizar variáveis de ambiente:
+
+ADMIN_USERNAME
+
+ADMIN_EMAIL
+
+ADMIN_INITIAL_PASSWORD
+
+Criar o administrador somente se ele ainda não existir.
+
+Não criar administradores duplicados durante reinicializações.
+
+⸻
+
+27. PRIMEIRO LOGIN DO ADMINISTRADOR
+
+No primeiro acesso do administrador:
+
+Obrigatoriamente solicitar a alteração da senha inicial.
+
+Depois da alteração:
+
+* Invalidar a senha inicial
+* Salvar somente o novo hash
+* Atualizar o status de primeiro acesso
+
+A senha inicial nunca deve continuar sendo considerada uma senha permanente de produção.
+
+⸻
+
+28. DASHBOARD ADMINISTRATIVO
+
+Criar dashboard exclusivo para o administrador.
+
+Mostrar informações gerais do sistema:
+
+* Total de usuários
+* Usuários ativos
+* Novos usuários
+* Total de transações
+* Total de metas
+* Total de contas cadastradas
+* Crescimento de usuários
+* Erros do sistema
+* Estatísticas gerais
+
+Criar gráficos administrativos.
+
+Os dados devem ser agregados sempre que possível.
+
+⸻
+
+29. PRIVACIDADE DO ADMINISTRADOR
+
+Por padrão, o administrador NÃO deve ter acesso automático aos detalhes financeiros privados dos usuários.
+
+O painel deve priorizar métricas agregadas.
+
+Não mostrar:
+
+* Senhas
+* Tokens
+* Dados de autenticação
+* Informações financeiras privadas desnecessárias
+
+Se alguma função administrativa exigir acesso excepcional a dados específicos, implementar autorização explícita e registro em auditoria.
+
+⸻
+
+30. GERENCIAMENTO DE USUÁRIOS
+
+No painel administrativo, permitir:
+
+* Visualizar usuários
+* Pesquisar usuários
+* Ver status da conta
+* Ativar/desativar conta
+* Visualizar data de cadastro
+* Alterar permissões quando apropriado
+
+Nunca mostrar senhas.
+
+Não permitir que o administrador visualize ou altere senhas dos usuários.
+
+⸻
+
+31. LOGS DE AUDITORIA
+
+Registrar ações administrativas importantes.
+
+Exemplos:
+
+* Login administrativo
+* Logout
+* Criação de usuário
+* Alteração de usuário
+* Desativação de conta
+* Alteração de permissões
+* Alteração de configurações administrativas
+
+Registrar:
+
+* ação
+* data
+* usuário responsável
+* resultado
+* informações necessárias para auditoria
+
+Não registrar senhas ou tokens.
+
+⸻
+
+32. SEGURANÇA
+
+Implementar segurança desde o backend.
+
+Utilizar:
+
+* Hash seguro de senhas
+* Autenticação
+* Autorização
+* Controle de acesso baseado em função
+* Validação de entrada
+* Proteção contra SQL Injection
+* Proteção contra XSS
+* Proteção contra CSRF quando aplicável
+* Rate limiting
+* Sessões seguras
+* Cookies seguros quando utilizados
+* Expiração de sessão quando apropriado
+* Proteção de rotas
+* Variáveis de ambiente
+* Segredos somente no backend
+
+Nunca colocar:
+
+* Senhas
+* API keys
+* Tokens
+* Secrets
+
+diretamente no código frontend.
+
+Implementar isolamento de dados por usuário.
+
+⸻
+
+33. PROTEÇÃO CONTRA ATAQUES
+
+Validar e sanitizar entradas recebidas do usuário.
+
+Nunca confiar nos dados enviados pelo navegador.
+
+Toda operação importante deve ser validada no servidor.
+
+Evitar:
+
+* SQL Injection
+* XSS
+* CSRF
+* Broken Access Control
+* IDOR
+* Vazamento de informações
+* Escalonamento indevido de privilégios
+
+Testar principalmente as rotas:
+
+* Login
+* Cadastro
+* Transações
+* Metas
+* Contas
+* Perfil
+* Exportação
+* Administração
+
+⸻
+
+34. EXPERIÊNCIA DO USUÁRIO
+
+Criar estados para:
+
+* Carregamento
+* Erro
+* Sucesso
+* Lista vazia
+* Sem transações
+* Sem metas
+* Sem dados suficientes para gráficos
+
+Exemplo de primeiro dashboard:
+
+“Você ainda não possui movimentações.”
+
+Botão:
+
+Adicionar primeira movimentação
+
+⸻
+
+35. BOTÃO PRINCIPAL
+
+Criar botão de ação rápida:
+
++ Adicionar
+
+Ao clicar, mostrar:
+
+* Nova despesa
+* Nova receita
+
+No celular, deixar esse botão facilmente acessível.
+
+⸻
+
+36. FORMATAÇÃO
+
+Todos os valores monetários devem utilizar o padrão brasileiro:
+
+R$ 1.250,50
+
+Datas:
+
+26/09/2026
+
+Idioma padrão:
+
+Português do Brasil
+
+⸻
+
+37. ACESSIBILIDADE
+
+Garantir:
+
+* Contraste adequado
+* Textos legíveis
+* Botões com tamanho adequado
+* Navegação por teclado
+* Labels nos campos
+* Estados de foco
+* Descrições para elementos importantes
+* Compatibilidade com leitores de tela quando possível
+
+⸻
+
+38. PERFORMANCE
+
+O sistema deve ser rápido.
+
+Evitar:
+
+* Carregamentos desnecessários
+* Consultas duplicadas
+* Renderizações excessivas
+* Bibliotecas desnecessárias
+
+O dashboard deve carregar os dados de maneira eficiente.
+
+⸻
+
+39. MOBILE-FIRST
+
+A experiência no celular deve ser tratada como prioridade.
+
+Criar:
+
+* Menu inferior
+* Cards adaptáveis
+* Formulários fáceis de preencher
+* Botões grandes o suficiente
+* Gráficos responsivos
+* Listas que funcionem bem em telas pequenas
+
+A interface deve funcionar muito bem em um iPhone.
+
+⸻
+
+40. ANIMAÇÕES
+
+Adicionar animações suaves para:
+
+* Entrada de cards
+* Transições de páginas
+* Modais
+* Botões
+* Barras de progresso
+* Gráficos
+
+Evitar animações exageradas.
+
+Respeitar usuários que preferem reduzir movimento.
+
+⸻
+
+41. ARQUITETURA
+
+Organizar o projeto de maneira profissional.
+
+Separar:
+
+* Frontend
+* Backend
+* Banco de dados
+* Autenticação
+* Componentes
+* Serviços
+* Validações
+* Configurações
+
+Manter o código limpo e reutilizável.
+
+Criar componentes reutilizáveis.
+
+Não duplicar código desnecessariamente.
+
+⸻
+
+42. DOCUMENTAÇÃO
+
+Criar um README explicando:
+
+* Como instalar
+* Como executar
+* Como configurar variáveis de ambiente
+* Como configurar o banco
+* Como criar o administrador inicial
+* Como alterar a senha administrativa
+* Como executar testes
+* Como fazer build
+* Como fazer deploy
+
+Documentar todas as variáveis de ambiente necessárias.
+
+⸻
+
+43. VARIÁVEIS DE AMBIENTE
+
+Criar arquivo de exemplo:
+
+.env.example
+
+Incluir variáveis necessárias, como:
+
+DATABASE_URL
+
+ADMIN_USERNAME
+
+ADMIN_EMAIL
+
+ADMIN_INITIAL_PASSWORD
+
+e quaisquer outras necessárias para o funcionamento do sistema.
+
+Nunca colocar valores secretos reais no repositório.
+
+⸻
+
+44. TESTES
+
+Criar testes para os principais fluxos.
+
+Testar:
+
+Usuário
+
+* Cadastro
+* Login
+* Logout
+* Alteração de senha
+* Recuperação de senha
+* Edição de perfil
+
+Financeiro
+
+* Criar receita
+* Criar despesa
+* Editar transação
+* Excluir transação
+* Filtrar transações
+* Calcular saldo
+
+Metas
+
+* Criar meta
+* Adicionar contribuição
+* Calcular progresso
+* Editar meta
+* Excluir meta
+
+Segurança
+
+* Usuário não acessa dados de outro usuário
+* Usuário não acessa painel administrativo
+* Administrador consegue acessar painel
+* Rotas protegidas funcionam corretamente
+
+⸻
+
+45. REGRAS IMPORTANTES
+
+O sistema NÃO deve ser apenas uma interface bonita.
+
+Tudo deve funcionar.
+
+Não criar:
+
+* Botões falsos
+* Gráficos estáticos
+* Login fictício
+* Dados financeiros inventados
+* Formulários sem persistência
+* Funcionalidades simuladas
+
+Os dados devem ser reais e persistidos no banco de dados.
+
+Os gráficos devem utilizar dados reais.
+
+O saldo deve ser calculado a partir das movimentações.
+
+As metas devem utilizar dados reais.
+
+O histórico deve utilizar dados reais.
+
+O administrador deve possuir autenticação real.
+
+⸻
+
+46. ESTADOS INICIAIS
+
+Um usuário recém-cadastrado não deve receber movimentações falsas.
+
+Começar com:
+
+* Saldo: R$ 0,00
+* Receitas: R$ 0,00
+* Despesas: R$ 0,00
+* Metas: nenhuma
+* Transações: nenhuma
+
+Mostrar uma experiência de onboarding para ajudar o usuário a começar.
+
+⸻
+
+47. FLUXO PRINCIPAL
+
+Fluxo esperado:
+
+Landing Page
+
+↓
+
+Criar conta
+
+↓
+
+Configurar perfil financeiro
+
+↓
+
+Dashboard
+
+↓
+
+Adicionar receita/despesa
+
+↓
+
+Dashboard atualizado
+
+↓
+
+Histórico
+
+↓
+
+Gráficos
+
+↓
+
+Metas
+
+↓
+
+Orçamento
+
+↓
+
+Insights
+
+↓
+
+Perfil/Configurações
+
+⸻
+
+48. FLUXO DO ADMINISTRADOR
+
+Login administrativo
+
+↓
+
+Validação de credenciais
+
+↓
+
+Verificação da role admin
+
+↓
+
+Se for primeiro acesso:
+
+Alterar senha obrigatoriamente
+
+↓
+
+Dashboard administrativo
+
+↓
+
+Gerenciamento de usuários
+
+↓
+
+Métricas
+
+↓
+
+Logs de auditoria
+
+↓
+
+Configurações administrativas
+
+⸻
+
+49. RESULTADO FINAL
+
+Entregar um FinTrack completo, funcional, seguro, responsivo e profissional.
+
+O resultado deve parecer um produto SaaS financeiro real.
+
+A interface deve ser moderna, mas a prioridade é:
+
+1. Funcionalidade
+2. Segurança
+3. Experiência do usuário
+4. Responsividade
+5. Performance
+6. Design
+
+Não substituir funcionalidades reais por placeholders.
+
+Antes de finalizar, verificar se:
+
+* Cadastro funciona
+* Login funciona
+* Logout funciona
+* Banco de dados funciona
+* Transações funcionam
+* Saldo funciona
+* Histórico funciona
+* Pesquisa funciona
+* Filtros funcionam
+* Gráficos funcionam
+* Metas funcionam
+* Orçamento funciona
+* Perfil funciona
+* Configurações funcionam
+* Exportação funciona
+* Administração funciona
+* Proteção de rotas funciona
+* Usuários estão isolados
+* Senhas estão protegidas
+* Primeiro login do administrador exige troca da senha
+* Não existem secrets expostos no frontend
+
+Crie o projeto completo seguindo todas essas especificações.
